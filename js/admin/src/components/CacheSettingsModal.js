@@ -2,7 +2,7 @@ import SettingsModal from 'flarum/components/SettingsModal';
 
 export default class CacheSettingsModal extends SettingsModal {
     className() {
-        return 'CacheSettingsModal Modal--small';
+        return 'CacheSettingsModal Modal--large';
     }
 
     title() {
@@ -14,8 +14,17 @@ export default class CacheSettingsModal extends SettingsModal {
             <div className="Form-group">
                 <label>Cache driver</label>
                 <select bidi={this.setting('hyn.analytics.google')}>
+                    <option value="apc">APC</option>
+                    <option value="array">array (no cache)</option>
+                    <option value="database">Database</option>
+                    <option value="file">File (Flarum default)</option>
+                    <option value="memcached" disabled>Memcached</option>
                     <option value="redis">Redis</option>
                 </select>
+            </div>
+            <div className="Form-group">
+                <label>Server settings</label>
+
             </div>
         ];
     }
