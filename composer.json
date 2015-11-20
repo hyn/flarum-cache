@@ -23,8 +23,8 @@
             "title": "Cache",
             "icon": {
                 "name": "tachometer",
-                "backgroundColor": "#FF9D00",
-                "color": "#FF1800"
+                "backgroundColor": "#74000E",
+                "color": "#BE1E31"
             }
         }
     },

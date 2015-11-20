@@ -13,7 +13,7 @@ export default class CacheSettingsModal extends SettingsModal {
         return [
             <div className="Form-group">
                 <label>Cache driver</label>
-                <select bidi={this.setting('hyn.analytics.google')}>
+                <select bidi={this.setting('hyn.cache.driver')}>
                     <option value="apc">APC</option>
                     <option value="array">array (no cache)</option>
                     <option value="database">Database</option>
@@ -21,7 +21,7 @@ export default class CacheSettingsModal extends SettingsModal {
                     <option value="memcached" disabled>Memcached</option>
                     <option value="redis">Redis</option>
                 </select>
-            </div>
+            </div>,
             <div className="Form-group">
                 <label>Server settings</label>
 
